@@ -13,7 +13,7 @@ class AnnePrimonWindow(QMainWindow):
         layout = QVBoxLayout(central_widget)
         
         label = QLabel("Anne Primon")
-        label.setAlignment(Qt.AlignCenter)  # Centraliza o texto
+        label.setAlignment(Qt.AlignCenter) 
         label.setStyleSheet("font-size: 24px; font-weight: bold;")
 
         layout.addWidget(label)

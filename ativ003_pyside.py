@@ -7,7 +7,7 @@ class AnnePrimonButtonWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("Anne Primon with Photo and Button")
+        self.setWindowTitle("Anne Primon")
         self.setGeometry(100, 100, 400, 400)
 
         central_widget = QWidget()
@@ -18,7 +18,6 @@ class AnnePrimonButtonWindow(QMainWindow):
         label.setStyleSheet("font-size: 24px; font-weight: bold;")
         layout.addWidget(label)
 
-        # Carregue a imagem
         pixmap = QPixmap(r'C:\Users\suporte\Documents\GitHub\aula-bibliotecas\paisagem.jpg')
         photo_label = QLabel()
         photo_label.setAlignment(Qt.AlignCenter)

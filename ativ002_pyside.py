@@ -7,7 +7,7 @@ class AnnePrimonPhotoWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("Anne Primon with Photo")
+        self.setWindowTitle("Anne Primon")
         self.setGeometry(100, 100, 400, 350)
 
         central_widget = QWidget()
