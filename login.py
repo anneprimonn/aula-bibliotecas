@@ -11,14 +11,16 @@ class Login(QMainWindow):
 
 
         central_widget = QWidget()
-        self.setCentralWidget(central_widget) 
+        self.setCentralWidget(central_widget)
 
-        layout = QVBoxLayout(central_widget) 
+        layout = QVBoxLayout(central_widget)
 
         self.label_usuario = QLabel("Usuário:")
-        self.label_usuario.setAlignment(Qt.Alignment)
+        self.label_usuario.setAlignment(Qt.AlignCenter)  
         self.input_usuario = QLineEdit()
+        
         self.label_senha = QLabel("Senha:")
+        self.label_senha.setAlignment(Qt.AlignCenter)  
         self.input_senha = QLineEdit()
         self.input_senha.setEchoMode(QLineEdit.Password)
         self.botao_entrar = QPushButton("Entrar")
@@ -26,7 +28,7 @@ class Login(QMainWindow):
 
 
         self.botao_entrar.clicked.connect(self.verificar_login)
-        self.botao_cancelar.clicked.connect(self.close) 
+        self.botao_cancelar.clicked.connect(self.close)
 
         layout.addWidget(self.label_usuario)
         layout.addWidget(self.input_usuario)
